@@ -1,0 +1,112 @@
+body{
+    background-image: url(./assets/fond.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0.5vw 25vw 0.5vw 25vw;
+    border: solid grey 10px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    width: 50vw;
+    height: 96.1vh;
+}
+
+#main{
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+}
+
+#image_main{
+    width: 50vw;
+    height: 50vh;
+}
+
+#second{
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+#gauche{
+    grid-column: 1/2;
+    background-color: #bbd0ffe6;
+}
+
+#button-container{
+    border:solid black 5px;
+    border-radius: 1vw;
+    background: 
+    linear-gradient(to bottom right, rgb(182, 182, 247), rgba(214, 97, 185, 0.651) 50%),
+    linear-gradient(to top left, purple, rgba(255,0,0) 80%);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    margin: 1vw;
+    padding: 0.5vw;
+}
+
+.c1{
+    grid-column: 1/2;
+}
+
+.c2{
+    grid-column: 2/3;
+}
+
+.c3{
+    grid-column: 3/4;
+}
+.r1{
+    grid-row: 1/2;
+}
+
+.r2{
+    grid-row: 2/3;
+}
+
+.r3{
+    grid-row: 3/4;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    transform:scale(120%);
+}
+
+button[disabled]:hover{
+    transform: scale(1);
+    cursor: default;
+}
+
+button img{
+    width: 1.5vw;
+}
+
+#compas{
+    width: 10vw;
+    margin-left: 1vw;
+}
+
+#droite{
+    grid-column: 2/5;
+    background-color: rgba(200, 182, 255, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+#text{
+    margin: 2vw;
+    padding: 1vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: solid black 2px;
+    box-shadow: 10px 10px 5px black;
+    position: relative;
+}
